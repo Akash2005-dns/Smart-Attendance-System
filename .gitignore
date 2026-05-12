@@ -1,0 +1,6 @@
+venv/
+smart_attendance_system/venv/
+__pycache__/
+*.pyc
+.env
+credentials.json

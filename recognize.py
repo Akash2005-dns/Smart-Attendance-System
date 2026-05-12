@@ -8,7 +8,7 @@ import csv
 from datetime import datetime 
 import os
 import time
-from google_sheets import mark_attendance_google
+from google_sheets import mark_attendance_google, update_class_sheet
 
 def mark_attendance(name):
     os.makedirs("logs", exist_ok=True)
@@ -105,6 +105,8 @@ while True:
             mark_attendance(name)
             #save to google sheets
             mark_attendance_google(name) #remove this line if you want to avoid duplicate entries in google sheets
+            # update class sheet present/absent
+            update_class_sheet(name)
         else:
             name = "Unknown"
 
