@@ -47,3 +47,91 @@ smart_attendance_system/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+
+
+## Installation
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/Akash2005-dns/Smart-attendance-system.git
+cd Smart-attendance-system
+```
+
+---
+
+### 2. Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+---
+
+### 3. Activate Virtual Environment
+
+#### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+#### Linux/macOS
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Run Project
+
+```bash
+python app.py
+```
+
+Open browser:
+
+```text
+http://127.0.0.1:5000
+```
+
+---
+
+## How It Works
+
+1. Capture student face images
+2. Generate face encodings
+3. Start attendance recognition
+4. Attendance gets marked automatically
+5. Data stored in Google Sheets
+
+---
+
+## Dataset and Encodings
+
+- `dataset/` stores captured student face images
+- `encodings/` stores generated facial encoding files
+
+These folders may initially contain only `.gitkeep` placeholder files.
+
+---
+## Author
+
+Akash
+
+---
+
+## License
+
+This project is for educational purposes.
+encodings/ stores generated facial encoding files
+
